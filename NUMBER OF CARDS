@@ -1,0 +1,10 @@
+def cardscount(n):
+  count=0
+  level=1
+  while n>=level:
+     count+=level*3
+     level+=1
+  count-=n
+  return count
+n=int(input())
+print(cardscount(n))
