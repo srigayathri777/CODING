@@ -1,0 +1,15 @@
+def ConvertToPalindrome(l):
+  le=len(l)
+  for i in range(le):
+    le=len(l)
+    if l[i]!=l[le-i-1]:
+      l.insert(i,l[le-i-1])
+    else:
+      break
+    s="".join(l)
+    if s==s[::-1]:
+      s=s.replace(s1,"")
+      return s
+s1=input().strip()
+l=list(s1)
+print(ConvertToPalindrome(l))
