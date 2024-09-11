@@ -1,0 +1,5 @@
+b = [1, 2, 3, 4, 5]
+index = 2
+new_value = 10
+b = b[:index] + [new_value] + b[index:]
+print(b)
