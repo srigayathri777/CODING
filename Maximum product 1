@@ -1,0 +1,16 @@
+def maximum_product(l1,l2,r1,r2):
+  a=[]
+  b=[]
+  for i in range(l1,r1+1):
+    a.append(i)
+  for i in range(l2,r2+1):
+    b.append(i)
+  if a and b:
+    a1=max(a)
+    a2=max(b)
+    print=a1*a2
+  else:
+    print=("none")
+  return print
+l1,l2,r1,r2=list(map(int,input().split()))
+print(maximum_product(l1,r1,l2,r2))
